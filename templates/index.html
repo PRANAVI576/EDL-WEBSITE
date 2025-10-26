@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Image Comparator</title>
+  <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Image Comparator</h1>
+    <form id="uploadForm">
+      <div class="row">
+        <div>
+          <label>Image 1</label>
+          <input type="file" id="img1" name="img1" accept="image/*" required>
+          <img id="preview1" class="preview" src="" alt="Preview 1">
+        </div>
+        <div>
+          <label>Image 2</label>
+          <input type="file" id="img2" name="img2" accept="image/*" required>
+          <img id="preview2" class="preview" src="" alt="Preview 2">
+        </div>
+      </div>
+      <button type="submit">Compare</button>
+    </form>
+
+    <div id="results" class="results" style="display:none">
+      <h2>Results</h2>
+      <div id="features"></div>
+      <div id="summary"></div>
+    </div>
+  </div>
+
+  <script src="/static/js/main.js"></script>
+</body>
+</html>
